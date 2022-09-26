@@ -19,6 +19,8 @@ public class Empleado {
     @Column(name = "email", length = 60, nullable = false, unique = true)
     private String email;
 
+    //contructor predeterminado
+    public Empleado (){}
     public Empleado(Long id, String nombre, String apellido, String email) {
         this.id = id;
         this.nombre = nombre;
